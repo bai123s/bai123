@@ -42,12 +42,8 @@
         mark {
             background-color: yellow;
         }
-        ruby {
-            font-size: 1.2em;
-            color: #555;
-        }
-        /* 修改 B站视频播放器样式 */
-        iframe.video {
+        /* 修改 iframe 样式 */
+        iframe {
             margin-top: 10px;
             border: none;
             width: 100%; /* 设置为100%宽度 */
@@ -56,17 +52,6 @@
             margin-left: auto;
             margin-right: auto;
             display: block; /* 使iframe居中显示 */
-        }
-        /* 修改代表性歌曲部分的播放器样式 */
-        iframe.song-player {
-            margin-top: 10px;
-            border: none;
-            width: 100%; /* 设置为100%宽度 */
-            height: 120px; /* 设置更适合的高度 */
-            margin-left: auto;
-            margin-right: auto;
-            display: block; /* 使iframe居中显示 */
-            margin-bottom: 20px; /* 增加下方的空白 */
         }
     </style>
 </head>
@@ -79,10 +64,8 @@
     <section id="bio">
         <h2>科特·柯本简介</h2>
         <p>科特·柯本（Kurt Cobain）是20世纪90年代最具影响力的音乐家之一，摇滚乐队<strong>Nirvana（涅槃乐队）</strong>的主唱、吉他手和词曲创作人。他是格兰奇音乐的代表人物，虽然他的音乐生涯短暂，但深刻影响了全球音乐文化。</p>
-        <p>科特·柯本的音乐风格融合了<strong>硬核朋克</strong>与旋律摇滚（melodic rock），创造出独特的格兰奇风格，这种风格对90年代的音乐产生了深远的影响。</p>
-        <p>例如，他的歌曲<ruby>《Smells Like Teen Spirit》<rp>(</rp><rt>青春气息</rt><rp>)</rp></ruby>成为了当时青少年反叛精神的代表。</p>
         <!-- 嵌入 B 站视频 -->
-        <iframe class="video" src="//player.bilibili.com/player.html?isOutside=true&aid=763270423&bvid=BV1164y187cg&cid=418645907&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+        <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=763270423&bvid=BV1164y187cg&cid=418645907&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
     </section>
 
     <section id="early-life">
@@ -91,8 +74,8 @@
     </section>
 
     <section id="nirvana">
-        <h2>涅槃乐队与成名</h2>
-        <p>科特·柯本于1987年与吉他手Krist Novoselic共同成立了<strong>Nirvana（涅槃乐队）</strong>。乐队的第二张专辑《Nevermind》于1991年发布，并迅速取得了巨大成功，特别是单曲<abbr title="Smells Like Teen Spirit">《SLTS》 </abbr>成为了90年代初的代表性歌曲。</p>
+        <h2>nie pan yue dui（涅槃乐队）与成名</h2>
+        <p>科特·柯本于1987年与吉他手Krist Novoselic共同成立了<strong>Nirvana（涅槃乐队）</strong>。乐队的第二张专辑《Nevermind》于1991年发布，并迅速取得了巨大成功，特别是单曲《Smells Like Teen Spirit》成为了90年代初的代表性歌曲。</p>
         <ul>
             <li><b>主唱/吉他手：</b>科特·柯本</li>
             <li><b>贝斯手：</b>Krist Novoselic</li>
@@ -111,7 +94,7 @@
             <dd>硬核朋克与旋律摇滚的结合，具有强烈的攻击性和情感深度。</dd>
         </dl>
         <!-- 网易云歌曲播放器：Smells Like Teen Spirit -->
-        <iframe class="song-player" src="https://music.163.com/outchain/player?type=2&id=4208530&auto=0&height=120" frameborder="0" allowtransparency="true"></iframe>
+        <iframe src="https://music.163.com/outchain/player?type=2&id=4208530&auto=0&height=90" width="100%" height="90" frameborder="0" allowtransparency="true"></iframe>
         
         <p><strong><em>《Come As You Are》</em></strong>是涅槃乐队的另一首经典作品，充满了独特的情感表达和旋律感。它通过简洁的吉他旋律和温暖的歌词，传达了接纳自己和他人的信息。</p>
         <dl>
@@ -121,7 +104,7 @@
             <dd>简洁的旋律和安静的氛围，融合了摇滚和流行的元素。</dd>
         </dl>
         <!-- 网易云歌曲播放器：Come As You Are -->
-        <iframe class="song-player" src="https://music.163.com/outchain/player?type=2&id=21303927&auto=0&height=120" frameborder="0" allowtransparency="true"></iframe>
+        <iframe src="https://music.163.com/outchain/player?type=2&id=21303927&auto=0&height=90" width="100%" height="90" frameborder="0" allowtransparency="true"></iframe>
     </section>
 
     <section id="personal-life">
