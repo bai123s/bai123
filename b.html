@@ -42,17 +42,27 @@
         mark {
             background-color: yellow;
         }
-        /* 修改 iframe 样式 */
-        iframe {
+        /* 修改 B站视频播放器样式 */
+        iframe.video {
             margin-top: 10px;
             border: none;
             width: 100%; /* 设置为100%宽度 */
             max-width: 800px; /* 最大宽度为800px */
-            height: 90px; /* 保持播放器高度为90px */
+            height: 450px; /* 设置为正常比例的高度 */
             margin-left: auto;
             margin-right: auto;
             display: block; /* 使iframe居中显示 */
-            margin-bottom: 10px; /* 增加少量的底部间距 */
+        }
+        /* 修改代表性歌曲部分的播放器样式 */
+        iframe.song-player {
+            margin-top: 10px;
+            border: none;
+            width: 100%; /* 设置为100%宽度 */
+            height: 90px; /* 设置适合高度 */
+            margin-left: auto;
+            margin-right: auto;
+            display: block; /* 使iframe居中显示 */
+            margin-bottom: 10px; /* 减少下方的空白 */
         }
     </style>
 </head>
@@ -66,7 +76,7 @@
         <h2>科特·柯本简介</h2>
         <p>科特·柯本（Kurt Cobain）是20世纪90年代最具影响力的音乐家之一，摇滚乐队<strong>Nirvana（涅槃乐队）</strong>的主唱、吉他手和词曲创作人。他是格兰奇音乐的代表人物，虽然他的音乐生涯短暂，但深刻影响了全球音乐文化。</p>
         <!-- 嵌入 B 站视频 -->
-        <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=763270423&bvid=BV1164y187cg&cid=418645907&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+        <iframe class="video" src="//player.bilibili.com/player.html?isOutside=true&aid=763270423&bvid=BV1164y187cg&cid=418645907&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
     </section>
 
     <section id="early-life">
@@ -95,7 +105,7 @@
             <dd>硬核朋克与旋律摇滚的结合，具有强烈的攻击性和情感深度。</dd>
         </dl>
         <!-- 网易云歌曲播放器：Smells Like Teen Spirit -->
-        <iframe src="https://music.163.com/outchain/player?type=2&id=4208530&auto=0&height=90" width="100%" height="90" frameborder="0" allowtransparency="true"></iframe>
+        <iframe class="song-player" src="https://music.163.com/outchain/player?type=2&id=4208530&auto=0&height=90" width="100%" height="90" frameborder="0" allowtransparency="true"></iframe>
         
         <p><strong><em>《Come As You Are》</em></strong>是涅槃乐队的另一首经典作品，充满了独特的情感表达和旋律感。它通过简洁的吉他旋律和温暖的歌词，传达了接纳自己和他人的信息。</p>
         <dl>
@@ -105,7 +115,7 @@
             <dd>简洁的旋律和安静的氛围，融合了摇滚和流行的元素。</dd>
         </dl>
         <!-- 网易云歌曲播放器：Come As You Are -->
-        <iframe src="https://music.163.com/outchain/player?type=2&id=21303927&auto=0&height=90" width="100%" height="90" frameborder="0" allowtransparency="true"></iframe>
+        <iframe class="song-player" src="https://music.163.com/outchain/player?type=2&id=21303927&auto=0&height=90" width="100%" height="90" frameborder="0" allowtransparency="true"></iframe>
     </section>
 
     <section id="personal-life">
