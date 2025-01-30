@@ -73,20 +73,22 @@
             margin-bottom: 20px;
             font-style: italic;
         }
-        footer {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            width: 100%;
-            text-align: center;
+        .analysis-list {
+            list-style-type: none; /* 去掉默认列表样式 */
+            padding-left: 20px;
         }
-        footer a {
-            color: #fff;
-            text-decoration: none;
+        .analysis-list li {
+            margin-bottom: 15px;
+            text-align: left;
+            line-height: 1.6;
         }
-        footer a:hover {
-            text-decoration: underline;
+        .analysis-list li::before {
+            content: "•"; /* 使用圆点作为序号 */
+            color: #333;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
         }
     </style>
 </head>
@@ -124,7 +126,14 @@
             <figcaption>词云图美化版</figcaption>
         </figure>
 
-        <p>在词云图中，可看到高频词为xxxx，这说明xxxx。</p>
+        <!-- 高频词分析 -->
+        <ul class="analysis-list">
+            <li><strong>“好看”“喜欢”“真的”“call”</strong>说明观众对电影的整体评价较为积极。大部分观众对电影的整体内容和呈现效果较为满意，认为影片在叙事、表演、画面等方面都达到了较高的水准，是一部值得一看的作品。比如电影以轻松幽默的方式探讨了女性主义、家庭关系等深刻话题，这种独特的叙事手法和情感表达得到了不少观众的认可。</li>
+            <li><strong>“女性”“妈妈”</strong>等反映观众对电影中女性主义表达的关注和认同。电影通过三位女性角色的故事，展现了女性之间的友谊、独立与成长，以及对传统性别角色的挑战。例如，王铁梅和小叶等角色的形象鲜明，她们在面对生活和情感问题时的态度和选择，引发了观众对女性自我价值和社会地位的思考。观众对电影中母女关系以及母亲角色的塑造较为关注。影片中王铁梅作为单亲妈妈的形象，既展现了母亲的坚强和独立，也体现了母女之间的亲密与矛盾，这种对母女关系的细腻刻画让观众产生了共鸣。</li>
+            <li><strong>“大哭”</strong>出现106次，说明电影中的一些情节或情感表达触动了观众的内心，引发了他们强烈的情感共鸣。例如，电影中关于家庭、友情和爱情的描写，以及女性在面对困境时的坚强和勇敢，都让观众为之动容。</li>
+            <li><strong>“小孩”</strong>出现78次，说明了观众对于影片中“正直勇敢有阅读量”的小孩这一角色关注度高，干净正直、充满幻想的生活态度得到了观众的认同和喜爱。</li>
+            <li><strong>“导演”</strong>出现74次，说明观众对导演邵艺辉的创作手法和表达方式较为关注。导演通过独特的视角和叙事方式，将女性主义、家庭关系等复杂议题融入到轻松幽默的故事中，这种创作方式得到了部分观众的认可。</li>
+        </ul>
 
         <h2>LDA主题分析</h2>
 
@@ -135,12 +144,6 @@
 
         <p>在词云图中，可看到高频词为xxxx，这说明xxxx。</p>
     </div>
-
-    <!-- 页脚 -->
-    <footer>
-        <p>&copy; 2023 b站电影《好东西》评论数据分析. 版权所有.</p>
-        <p><a href="https://github.com/yourusername/your-repo" target="_blank">GitHub 仓库</a></p>
-    </footer>
 
 </body>
 </html>
