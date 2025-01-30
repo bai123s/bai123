@@ -7,58 +7,85 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f9f9f9;
         }
         h1, h2 {
             color: #333;
+            margin: 20px 0;
         }
         img {
-            max-width: 100%;
+            max-width: 60%; /* 调整图片宽度为60% */
             height: auto;
             display: block;
-            margin: 20px 0;
+            margin: 20px auto; /* 图片居中 */
+            border: 1px solid #ddd; /* 添加边框 */
+            border-radius: 8px; /* 圆角边框 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
         }
         figcaption {
             text-align: center;
             font-style: italic;
             color: #555;
+            margin-top: 10px;
         }
         p {
             line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: left; /* 段落文字左对齐 */
+            padding: 0 20px;
+        }
+        .content {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
 
-    <h1>数据爬取展示</h1>
+    <div class="content">
+        <h1>数据爬取展示</h1>
 
-    <h2>词频分析及词云制作</h2>
+        <h2>词频分析及词云制作</h2>
 
-    <figure>
-        <img src="Historic_柱状图.png" alt="词频统计图">
-        <figcaption>词频统计图</figcaption>
-    </figure>
+        <figure>
+            <img src="Historic_柱状图.png" alt="词频统计图">
+            <figcaption>词频统计图</figcaption>
+        </figure>
 
-    <figure>
-        <img src="词云图.png" alt="词云图初版">
-        <figcaption>词云图初版</figcaption>
-    </figure>
+        <figure>
+            <img src="词云图.png" alt="词云图初版">
+            <figcaption>词云图初版</figcaption>
+        </figure>
 
-    <figure>
-        <img src="词云.png" alt="词云图美化版">
-        <figcaption>词云图美化版</figcaption>
-    </figure>
+        <figure>
+            <img src="词云.png" alt="词云图美化版">
+            <figcaption>词云图美化版</figcaption>
+        </figure>
 
-    <p>在词云图中，可看到高频词为xxxx，这说明xxxx。</p>
+        <p>在词云图中，可看到高频词为xxxx，这说明xxxx。</p>
 
-    <h2>LDA主题分析</h2>
+        <h2>LDA主题分析</h2>
 
-    <figure>
-        <img src="LDA主题词分布.png" alt="LDA主题词分布">
-        <figcaption>LDA主题词分布</figcaption>
-    </figure>
+        <figure>
+            <img src="LDA主题词分布.png" alt="LDA主题词分布">
+            <figcaption>LDA主题词分布</figcaption>
+        </figure>
 
-    <p>在词云图中，可看到高频词为xxxx，这说明xxxx。</p>
+        <p>在词云图中，可看到高频词为xxxx，这说明xxxx。</p>
+    </div>
 
 </body>
 </html>
